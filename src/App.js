@@ -1,15 +1,14 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ProductGrid from "./components/ProductGrid";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <ProductGrid />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 

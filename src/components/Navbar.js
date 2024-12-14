@@ -1,21 +1,25 @@
 import React from "react";
-import "./Navbar.css"; // Ensure the path is correct
+import { Link } from "react-router-dom";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <ul>
+      <div className="logo">
+        <Link to="/">Stonepedia</Link>
+      </div>
+      <ul className="navbar-links">
         <li>
-          <button onClick={() => alert("Home clicked")}>Home</button>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <button onClick={() => alert("About clicked")}>About</button>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <button onClick={() => alert("Products clicked")}>Products</button>
+          <Link to="/products">Products</Link>
         </li>
         <li>
-          <button onClick={() => alert("Contact clicked")}>Contact</button>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </nav>
