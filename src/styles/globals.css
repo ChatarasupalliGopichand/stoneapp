@@ -1,0 +1,31 @@
+.hero-section {
+    background-image: url('/images/hero.jpg'); /* Correct path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+.hero-section {
+  background-image: url('https://via.placeholder.com/1200x600.png?text=Hero+Image');
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1, h2, h3, p {
+  color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
